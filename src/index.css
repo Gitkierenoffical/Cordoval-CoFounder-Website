@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@import "./brand.css";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  background: #f4f0ff;
+}
+
+:focus-visible {
+  outline-color: #0a5cff;
+}
+
+.page-shell {
+  background: #f4f0ff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
